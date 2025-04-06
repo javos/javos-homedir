@@ -1,58 +1,57 @@
 /* Dash / Dash To Dock */
 
 #dash {
-  margin: 0 !important;
-  padding: 0 !important;
+  /* margin: 0;
+  padding: 0; */
 }
 
 #dash .dash-item-container .overview-tile,
 #dash .dash-item-container .show-apps,
 #dash .dash-item-container .grid-search-result {
-  margin: 0 !important;
-  padding: 0 !important;
 }     
 
 #dash .dash-item-container .overview-tile:hover .overview-icon,
 #dash .dash-item-container .show-apps:hover .overview-icon,
 #dash .dash-item-container .grid-search-result:hover .overview-icon{
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 #dash .dash-item-container .overview-tile:focus .overview-icon,
 #dash .dash-item-container .show-apps:focus .overview-icon,
 #dash .dash-item-container .grid-search-result:focus .overview-icon {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 #dash .dash-item-container .overview-icon {
-  padding: 2px 0 !important;
+  padding: 4px 0;
+}
+
+.app-grid-running-dot {
+  height: 4px;
+  width: 4px;
 }
 
 
-/* 
+
 #dash .dash-background {
+  background: transparent;
   border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
-  background: rgba(50,50,50,0.7);
-  border-radius: 0 !important;
-}*/
+  border-radius: 0;
+  background: rgba(30,30,30,0.8);
+  /* border-radius: 100px; */
+}
 
 
 
 /* Top Panel */
 
-/* Top Panel - Power etc */
-.panel-status-indicators-box .privacy-indicator {
-  margin-left: 24px;
+#panel .panel-button {
+  
 }
 
 .clock-display {
   font-weight: bold;
 }
-.panel-status-indicators-box .power-status {
-  margin-right: 10px;
-}
 
-#panel StLabel {
-	font-weight: bold;
-}
+/* Right Side Icons */
+.panel-status-indicators-box .power-status {  }
