@@ -5,8 +5,11 @@ This used to be a backup of my essential home folder configs but has evolved a b
 
 ## postinstall 
 Automatic installation of apps. *Deprecated! Do not use!*
+
 TODO: Rewrite postinstall to be distro-independent.
+
 TODO: Add ability to select which software to install
+
 TODO: Add error handling
 
 ## Styling
