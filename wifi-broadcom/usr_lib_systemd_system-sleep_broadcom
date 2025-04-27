@@ -1,0 +1,13 @@
+#!/bin/sh
+set -u
+case "$1" in
+    pre)
+        /usr/sbin/modprobe -r brcmfmac_wcc brcmfmac
+        ;;
+    post)
+        /usr/sbin/modprobe brcmfmac
+        ;;
+    *)
+        echo "unknown action $1"
+        ;;
+esac
