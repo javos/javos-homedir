@@ -1,6 +1,6 @@
-Fixes:
+# Fixes
 
-# brcmfmac does not work after suspend
+## brcmfmac does not work after suspend
 Fix for Mac laptops with Broadcom chips
 
 Issue: Wifi does not work or does not show networks after sleep/suspend to RAM
