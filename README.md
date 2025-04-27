@@ -1,6 +1,14 @@
 # javos homedir
 This used to be a backup of my essential home folder configs but has evolved a bit over time. Now this is a collection of my configs, fixes and improvements that I use with every linux install. I either made them myself or found them on the internet (sources are provided in this README)
 
+## Scripts
+
+## postinstall 
+Automatic installation of apps. *Deprecated! Do not use!*
+TODO: Rewrite postinstall to be distro-independent.
+TODO: Add ability to select which software to install
+TODO: Add error handling
+
 ## Styling
 
 ### vonvon-tweaks
