@@ -3,6 +3,8 @@
 ## brcmfmac does not work after suspend
 Fix for Mac laptops with Broadcom chips
 
+Source: https://www.reddit.com/r/Fedora/comments/12fy9zc/comment/jh0uiox/
+
 ### Issue:
 Wifi does not work or does not show networks after sleep/suspend to RAM
 
