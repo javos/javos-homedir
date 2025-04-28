@@ -8,7 +8,6 @@
 #dash .dash-item-container .overview-tile,
 #dash .dash-item-container .show-apps,
 #dash .dash-item-container .grid-search-result {
-  border-radius: 100%;
 }     
 
 #dash .dash-item-container .overview-tile:hover .overview-icon,
@@ -25,28 +24,22 @@
 
 #dash .dash-item-container .overview-icon {
   padding: 4px 0;
-  color: rgba(255,255,255,0.7);
 }
 
 .app-grid-running-dot {
   height: 4px;
   width: 4px;
-  background-color: rgba(0,0,0,0.8);
 }
 
 
-#dash .show-apps {
-
-}
 
 #dash .dash-background {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 0;
-  background: rgba(180,180,180,0.5);
+  background: rgba(30,30,30,0.8);
   /* border-radius: 100px; */
 }
-
 
 
 
@@ -62,11 +55,3 @@
 
 /* Right Side Icons */
 .panel-status-indicators-box .power-status {  }
-
-
-/* -- Dash To Panel -- */
-
-.dashtopanelPanel {
-  border-radius: 100px;
-  overflow: hidden;
-}

@@ -15,10 +15,11 @@ TODO: Add error handling
 ## Styling
 
 ### vonvon-tweaks
-GNOME Shell theme with small tweaks to vanilla, most importantly a mac-inspired dark styling for `dashtodock`
+GNOME Shell theme with small tweaks to vanilla, most importantly a mac-inspired dark styling for `dashtodock`. Includes light and dark theme (has to be set manually)
 
-- Copy `Styling/vonvon-tweaks` to `.local/share/themes/`
-- Set Shell Theme in GNOME Tweaks to `vonvon-tweaks`
+
+- Copy `Styling/vonvon-tweaks` and `Styling/vonvon-tweaks-dark` to `.local/share/themes/`
+- Set Shell Theme in GNOME Tweaks to `vonvon-tweaks` or `vonvon-tweaks-dark` 
 
 ## Configs
 
