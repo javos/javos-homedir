@@ -43,3 +43,13 @@ Wifi does not work or does not show networks after sleep/suspend to RAM
 The file `brcmfmac-suspend` contains a script that unloads the kernel module `brcmfmac` before sleep and reloads it after sleep. Wifi should then function normally again 
 
 - Copy `Fixes/brcmfmac-suspend` to `/usr/lib/systemd/system-sleep/` and rename to `broadcom`
+
+
+### GTK4 apps not launching on older NVIDIA cards with vulkan GSK renderer
+
+#### Issue:
+New Gnome versions use the vulkan renderer for GTK4 apps, which apparently doesn't work with my Nvidia 1070ti and newer Nvidia drivers. Switching the GSK Renderer to cairo fixes that but disables some vulkan-related features on GTK4 apps
+
+#### Workaround/Solution:
+
+- Copy 'Fixes/gsk/gsk.sh/ to '/etc/profile.d/'
