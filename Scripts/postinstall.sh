@@ -4,6 +4,7 @@
 distro_id=$(grep "^ID=" /etc/*release | cut -d= -f2)
 
 if [ "$distro_id" = "fedora" ]; then
+  # Install zsh
   test ! -f /usr/bin/zsh && echo "Installing zsh and oh-my-zsh"
   test ! -f /usr/bin/zsh && sudo dnf install zsh -y
   test ! -f /usr/bin/zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -17,6 +18,11 @@ if [ "$distro_id" = "fedora" ]; then
   sudo dnf remove gnome-connections -y
   sudo dnf remove gnome-maps -y
   sudo dnf remove gnome-tour -y
+  sudo dnf remove rhythmbox -y
+  sudo dnf remove gnome-help -y
+
+  # Add Flathub repo
+  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 fi
 
