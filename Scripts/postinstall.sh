@@ -1,10 +1,25 @@
-# Ubuntu: Install Vanilla Gnome
-sudo apt install gnome-session -y
-sudo apt install vanilla-gnome-default-settings -y
-sudo apt install vanilla-gnome-desktop -y
+#!/bin/bash
 
+# Check the distro name
+distro_id=$(grep "^ID=" /etc/*release | cut -d= -f2)
+
+if [ "$distro_id" = "fedora" ]; then
+  echo "Removing some GNOME Default Apps"
+
+  # Remove Unused Gnome Default Apps
+  sudo dnf remove gnome-boxes -y
+  sudo dnf remove gnome-calculator -y
+  sudo dnf remove gnome-color-manager -y
+  sudo dnf remove gnome-connections -y
+  sudo dnf remove gnome-maps -y
+  sudo dnf remove gnome-tour -y
+
+fi
 
 # Install Flatpak Apps
+
+echo "Installing Flatpak Apps"
+
 flatpak install flathub com.cassidyjames.butler -y
 flatpak install flathub com.daidouji.oneko -y
 flatpak install flathub com.github.k4zmu2a.spacecadetpinball -y
