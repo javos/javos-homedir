@@ -4,6 +4,10 @@
 distro_id=$(grep "^ID=" /etc/*release | cut -d= -f2)
 
 if [ "$distro_id" = "fedora" ]; then
+  echo "Installing zsh and oh-my-zsh"
+  sudo dnf install zsh -y
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
   echo "Removing some GNOME Default Apps"
 
   # Remove Unused Gnome Default Apps
