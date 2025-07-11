@@ -66,3 +66,4 @@ flatpak install --user flathub org.signal.Signal -y
 flatpak install --user flathub org.telegram.desktop -y
 flatpak install --user flathub org.videolan.VLC -y
 flatpak install --user flathub org.virt_manager.virt-manager -y
+flatpak install --user flathub com.discordapp.Discord -y
