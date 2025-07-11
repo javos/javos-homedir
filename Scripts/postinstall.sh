@@ -5,9 +5,9 @@ distro_id=$(grep "^ID=" /etc/*release | cut -d= -f2)
 
 if [ "$distro_id" = "fedora" ]; then
   # Install zsh
-  test ! -f /usr/bin/zsh && echo "Installing zsh and oh-my-zsh"
-  test ! -f /usr/bin/zsh && sudo dnf install zsh -y
-  test ! -f /usr/bin/zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  #test ! -f /usr/bin/zsh && echo "Installing zsh and oh-my-zsh"
+  #test ! -f /usr/bin/zsh && sudo dnf install zsh -y
+  #test ! -f /usr/bin/zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
   echo "Removing some GNOME Default Apps"
 
