@@ -65,8 +65,6 @@
 
 
 /* -- Dash To Panel -- */
-
-.dashtopanelPanel {
-  border-radius: 100px;
-  overflow: hidden;
+#dashtopanelScrollview StWidget {
+  border-radius: 5px;
 }

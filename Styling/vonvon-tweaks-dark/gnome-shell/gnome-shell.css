@@ -55,3 +55,8 @@
 
 /* Right Side Icons */
 .panel-status-indicators-box .power-status {  }
+
+/* --- Dash To Panel --- */
+#dashtopanelScrollview StWidget {
+  border-radius: 5px;
+}
